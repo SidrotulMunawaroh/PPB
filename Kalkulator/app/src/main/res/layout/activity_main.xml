@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan angka pertama"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan angka kedua"
+        android:layout_below="@id/editTextNumber1"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/buttonTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        android:layout_below="@id/editTextNumber2"
+        android:onClick="tambah"/>
+
+    <Button
+        android:id="@+id/buttonKurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kurang"
+        android:layout_toEndOf="@id/buttonTambah"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_marginStart="16dp"
+        android:onClick="kurang"/>
+
+    <Button
+        android:id="@+id/buttonKali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kali"
+        android:layout_below="@id/buttonTambah"
+        android:layout_marginTop="16dp"
+        android:onClick="kali"/>
+
+    <Button
+        android:id="@+id/buttonBagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bagi"
+        android:layout_toEndOf="@id/buttonKali"
+        android:layout_below="@id/buttonKurang"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="bagi"/>
+
+    <TextView
+        android:id="@+id/textViewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil:"
+        android:layout_below="@id/buttonKali"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonKeluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:layout_below="@id/textViewHasil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:onClick="keluar"/>
+
+</RelativeLayout>
