@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hitung Luas Berbagai Bentuk</string>
+    <string name="choose_shape">Pilih Bentuk</string>
+    <string name="dimension1_hint">Dimensi 1</string>
+    <string name="dimension2_hint">Dimensi 2</string>
+    <string name="calculate">Hitung Luas</string>
+    <string-array name="shapes">
+        <item>Persegi Panjang</item>
+        <item>Lingkaran</item>
+        <item>Segitiga</item>
+    </string-array>
+</resources>
